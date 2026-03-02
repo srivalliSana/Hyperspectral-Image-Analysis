@@ -28,7 +28,7 @@ This work demonstrates how hyperspectral imaging enables:
 
 The HSF Fooding hyperspectral dataset was used in this project. The dataset contains high-dimensional spectral imagery capturing reflectance across a wide wavelength range.
 
-🔗 Dataset Link: *(Add your dataset link here)*
+🔗 Dataset Link:  https://cogsys.cs.uni-tuebingen.de/webprojects/DeepHS-Fruit-2023-Datasets/
 
 ---
 
