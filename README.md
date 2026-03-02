@@ -1,152 +1,130 @@
-# Hyperspectral-Image-Analysis
+# 🌿 Hyperspectral Image Processing and Classification
 
-🌿 Hyperspectral Crop and Material Classification Using ENVI
+This project focuses on hyperspectral image analysis to identify materials and vegetation conditions using spectral signatures. The workflow demonstrates a structured approach to hyperspectral preprocessing, feature extraction, and classification.
 
-This project focuses on hyperspectral image processing and classification to identify materials and vegetation conditions using spectral signatures. The objective was to develop a structured and reproducible workflow for extracting high-quality geospatial intelligence from hyperspectral datasets.
+---
 
-📌 Problem Statement
+## 📌 Problem Statement  
 
-Hyperspectral datasets contain hundreds of spectral bands, making analysis complex due to redundancy, noise, and mixed pixels. Traditional RGB imagery is insufficient for identifying subtle material and crop stress variations.
+Hyperspectral data contains hundreds of spectral bands, making analysis complex due to redundancy, noise, and mixed pixels. Traditional RGB and multispectral imagery are often insufficient for identifying subtle variations in crop stress and material properties.
 
-This project demonstrates a workflow for:
+This project develops a reproducible workflow for extracting actionable insights from hyperspectral datasets.
 
-Noise reduction
+---
 
-Spectral feature extraction
+## 🚀 Project Impact  
 
-Endmember identification
+This work demonstrates how hyperspectral imaging enables:
 
-Supervised classification
+- Early detection of plant stress and disease  
+- Accurate material and vegetation classification  
+- Precision agriculture and resource optimization  
+- Environmental monitoring and sustainability  
+- Improved decision-making in AgTech and remote sensing  
 
-Spatial statistical analysis.
+---
 
-📊 Dataset
+## 📊 Dataset  
 
-The HSF Fooding hyperspectral dataset was used. This dataset contains high-dimensional spectral imagery capturing material and vegetation reflectance across a wide wavelength range.
+The HSF Fooding hyperspectral dataset was used in this project. The dataset contains high-dimensional spectral imagery capturing reflectance across a wide wavelength range.
 
-🔗 Dataset Link: (add your dataset link here)
+🔗 Dataset Link: *(Add your dataset link here)*
 
-🛠️ Tools and Platforms
+---
 
-ENVI for hyperspectral processing
+## 🛠️ Tools and Platforms  
 
-Spectral analysis and classification
+- ENVI for hyperspectral processing  
+- Spectral analysis and classification  
+- Geospatial and remote sensing workflows  
 
-Remote sensing and geospatial techniques
+---
 
-🔬 Methodology
-Phase 1: Signal Optimization
+## 🔬 Methodology  
 
-Minimum Noise Fraction (MNF) rotation was applied to remove noise and reduce redundancy. This step improved spectral separability and increased classification accuracy.
+### Phase 1: Signal Optimization  
+Minimum Noise Fraction (MNF) rotation was applied to reduce noise and improve spectral separability.
 
-Key benefits:
+### Phase 2: Endmember Extraction  
+Pixel Purity Index (PPI) was used to identify pure spectral pixels.
 
-Noise reduction
+### Phase 3: ROI Development  
+Regions of Interest were created based on pure pixels for supervised classification.
 
-Dimensionality reduction
+### Phase 4: Supervised Classification  
+Spectral Angle Mapper (SAM) was used for classification due to its robustness in high-dimensional datasets.
 
-Improved endmember detection.
-
-Phase 2: Endmember Extraction
-
-Pixel Purity Index (PPI) was used to identify spectrally pure pixels representing different materials.
-
-Key steps:
-
-MNF-transformed data used as input
-
-5,000 iterations to ensure statistical robustness
-
-Thresholding to extract high-purity pixels.
-
-Phase 3: ROI Development
-
-Regions of Interest (ROIs) were created based on the extracted pure pixels. These ROIs were used as training samples for supervised classification.
-
-Phase 4: Supervised Classification
-
-Spectral Angle Mapper (SAM) was used to classify the hyperspectral data.
-
-Advantages of SAM:
-
-Robust to illumination changes
-
-Effective for spectral similarity
-
-Suitable for high-dimensional datasets.
-
-Phase 5: Post-Classification Refinement
-
+### Phase 5: Post-Classification Refinement  
 Majority filtering was applied to remove speckle noise and improve spatial consistency.
 
-This improved:
-
-Map readability
-
-Classification accuracy
-
-Statistical reliability.
-
-Phase 6: Statistical and Spatial Analysis
-
+### Phase 6: Statistical Analysis  
 Class statistics were extracted to quantify spatial distribution.
 
-Key results:
+---
 
-Dominant material class identified
+## 💡 My Contributions  
 
-Percentage area for each class computed
+- Developed a structured hyperspectral processing workflow  
+- Applied MNF and PPI for signal optimization  
+- Extracted spectral endmembers  
+- Created ROIs for supervised classification  
+- Performed SAM-based classification  
+- Conducted post-classification refinement  
+- Generated statistical and spatial insights  
 
-Spectral class signatures analyzed.
+---
 
-For example, the statistical output (shown in your file on page 4) quantifies class occupancy such as “Plate” dominating with ~85% area. 
+## 🌿 Key Techniques Used  
 
-Post-Classification Refinement …
+- MNF noise reduction  
+- Pixel Purity Index  
+- Endmember extraction  
+- Spectral Angle Mapper  
+- Majority filtering  
+- Statistical analysis  
 
-📈 Results
+---
 
-Accurate classification of spectral materials
+## 📊 Key Observations  
 
-Improved map quality after refinement
+- MNF improved spectral separability  
+- PPI enabled identification of reliable training samples  
+- SAM produced meaningful classification maps  
+- Post-classification refinement improved accuracy  
+- Statistical analysis provided quantitative insights  
 
-Clear spectral separability
+---
 
-Reliable statistical insights.
+## 🌍 Industry Use Cases  
 
-Spectral signature plots and classification maps are available in the results folder.
+- Precision agriculture  
+- Crop disease and stress detection  
+- Soil and mineral mapping  
+- Food and material quality inspection  
+- Environmental monitoring  
+- Defense and remote sensing  
 
-🚀 Industry Relevance
+---
 
-This workflow is applicable in:
+## ⚠️ Challenges Faced  
 
-Precision agriculture
+- High dimensionality and redundancy  
+- Mixed pixels  
+- Noise and atmospheric interference  
+- ROI selection complexity  
 
-Crop stress and disease detection
+---
 
-Soil and mineral mapping
+## 🔮 Future Scope  
 
-Environmental monitoring
+- Deep learning-based hyperspectral classification  
+- Spectral-spatial CNN models  
+- Multispectral and hyperspectral data fusion  
+- UAV-based hyperspectral monitoring  
+- Cloud-based geospatial analytics  
 
-Food and material quality inspection
+---
 
-Defense and remote sensing.
+## 📬 Contact  
 
-⚠️ Challenges Faced
-
-High dimensionality
-
-Mixed pixels
-
-Noise in spectral bands
-
-ROI selection complexity.
-
-🔮 Future Work
-
-Deep learning-based hyperspectral classification
-
-3D CNN and spectral-spatial models
-
-Multispectral and hyperspectral fusion
-
-Real-time UAV-based hyperspectral monitoring.
+For collaboration or research discussions in hyperspectral imaging, AI, and agriculture, feel free to connect.
